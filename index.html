@@ -89,7 +89,45 @@ h3 {
   width: 100%;
   text-align: center;
 
+
 }
+
+.button {
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
 </style>
 </head>
 <body>
@@ -97,8 +135,8 @@ h3 {
 <div class="bgimg-1">
   <div class="caption">
   <span class="border">
-  <p ><font color="white" size= 5 > <i>NPJ Presents... </i></font></p>  
-  <p ><font color="white" size= 10>Home page of Navaneet.J</font></p>    
+  <p ><font color="white" size= 3 > <i>NPJ Presents... </i></font></p>  
+  <p ><font color="white" size= 7.5>Home page of Navaneet.J</font></p>    
   
   </span>
   </div>
@@ -107,7 +145,7 @@ h3 {
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">Portfolio of Navaneet.J</h3>
   <center>
-  <iframe src="https://navaneet239.github.io/myPortfolio/" height="950" width="1100" title="Portfolio"></iframe>
+   <a href="https://navaneet239.github.io/myPortfolio/"> <button class="button">Click here</button></a>
   </center>
 </div>
 
@@ -124,7 +162,7 @@ h3 {
     <h3 style="text-align:center;">The alien runner</h3>
     <h5 style="text-align:center;"> Further links will be given. Make sure to open them separately </h5>
     <center>
-    <iframe src="https://navaneet239.github.io/AlienRunnerGame_HomePage/" height="750" width="1100" title="Portfolio"></iframe>
+      <a href="https://navaneet239.github.io/AlienRunnerGame_HomePage/"> <button class="button">Click here</button></a>
     </center>  </div>
 </div>
 
@@ -136,7 +174,7 @@ h3 {
 
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3>propably...</h3>
+  <h3>probably...</h3>
   </div>
 </div>
 
