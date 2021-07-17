@@ -14,10 +14,9 @@ body, html {
 }
 
 .bg {
-  background-image: url("NPJ wallpaper 5.gif");
+  background-image: url("https://i.pinimg.com/originals/c7/88/b1/c788b1dbd0e816f4dfa976f5c0001810.jpg");
 
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -27,6 +26,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 
 }
 .bgimg-1 {
@@ -400,6 +400,63 @@ body {
   }
 }
 
+.subheader {
+  padding: 10px 16px;
+  background: rgb(67, 69, 71);
+  color: #f1f1f1;
+  float: top;
+  z-index: 1;
+}
+
+.subheader2 {
+  padding: 10px 16px;
+  background: rgb(67, 69, 71);
+  color: #f1f1f1;
+  float: top;
+  z-index: 3;
+}
+
+.button2 {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+A {text-decoration: none; color: white;} 
+
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 </style>
 
 <script>
@@ -488,7 +545,7 @@ function scrollFunction() {
   
   <div id="mySidenav3" class="sidenav3">
 
-    <a href="#discord" id="discord" onclick="openPage('3', this, 'red')" align="center">My discord server webpage</a>
+    <a href="#discord" id="discord" onclick="openPage('3', this, 'red')" align="center">My Discord community server</a>
     
   </div>
 
@@ -589,14 +646,27 @@ function scrollFunction() {
 
 <div id="2" class="tabcontent">
 
-  <iframe src="https://navaneet239.github.io/myPortfolio/" frameborder="0" width="100%" height="100%"></iframe>
+  <div class="subheader">
+    <center>
+    <h3> <font color="white">My Portfolio</font></h3>
+
+    <button class="button2" ><span><a href="https://navaneet239.github.io/myPortfolio/">Portfolio</a></span></button>
+    </center>
+  </div>
 
 </div>
 
 <div id="3" class="tabcontent">
 
-  <iframe src="https://navaneet239.github.io/npj.InfiniteCosmos/#home" frameborder="0" width="100%" height="100%"></iframe>
-
+    <div class="subheader2">
+      <center>
+        <h3> <font color="white">Please Do join our Discord community server!</font></h3>
+        <h4><font color="grey">Please open the link separately from this page</font></h4>
+        <button class="button2" ><span><a href="https://discord.gg/s8tCkeZBtG">Invite link</a></span></button>
+        <h4><font color="grey">Server webpage</font></h4>
+        <button class="button2" ><span><a href="https://navaneet239.github.io/npj.InfiniteCosmos/#home">webpage link</a></span></button>
+      </center>
+    </div>
 </div>
 
 </body>
