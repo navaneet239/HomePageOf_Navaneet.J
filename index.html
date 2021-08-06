@@ -11,6 +11,7 @@ body, html {
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
+  font-size:2vw;
 }
 
 .bg {
@@ -56,6 +57,8 @@ body, html {
   width: 100%;
   text-align: center;
   color: #000;
+  font-size:2vw;
+  
 }
 
 .caption span.border {
@@ -72,6 +75,8 @@ body, html {
   width: 50%;
   padding: 20px;
   text-align: center;
+  font-size:2vw;
+  
 }
 
 h3 {
@@ -79,6 +84,7 @@ h3 {
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
+  font-size:2vw;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -95,7 +101,7 @@ h3 {
   width: 50%;
   width: 100%;
   text-align: center;
-
+  font-size:2vw;
 
 }
 
@@ -171,6 +177,7 @@ h3 {
   text-decoration: none;
   font-size: 17px;
   top: 0%;
+  font-size:2vw;
 }
 
 /* Change the color of links on hover */
@@ -249,6 +256,7 @@ h3 {
   padding: 50px 0;
   text-align: center;
   margin-top: 20px;
+  font-size:2vw;
 } 
 
 /* Style the links inside the sidenav */
@@ -354,6 +362,7 @@ body {
   width: 100%;
   top: 0;
   z-index: 99;
+  
 }
 
 #navbar a {
@@ -406,6 +415,7 @@ body {
   color: #f1f1f1;
   float: top;
   z-index: 1;
+  
 }
 
 .subheader2 {
@@ -457,6 +467,184 @@ A {text-decoration: none; color: white;}
   opacity: 1;
   right: 0;
 }
+
+  
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+
+
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    
+  }
+  
+  /* Style tab links */
+  .tablink2 {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #006eff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(102, 156, 218);
+    width: 32%;
+    font-size:2vw;
+
+
+  }
+  
+  .tablink2:hover {
+    background-color: #08305e;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent2 {
+    color: black;
+    display: none;
+    
+    padding: 100px 20px;
+    height: 120%;
+    font-size:2vw;
+  }
+  
+  #1b {background-color: red;}
+  #2b {background-color: red;}
+  #3b {background-color: red;}
+  #4b {background-color: red;}
+
+  body, html {
+    height: 100%;
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("art.jpg");
+
+
+
+  /* middle height */
+  height: 50%;
+
+
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+/* Page content */
+.content {
+  padding: 20px;
+  text-align: center;
+
+
+}
+
+
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.button3 {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #006eff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(102, 156, 218);
+}
+
+.button3:hover {background-color: #0d3f81}
+
+.button3:active {
+  background-color: #0d3f81;
+  box-shadow: 0 5px rgb(102, 156, 218);
+  transform: translateY(4px);
+}
+
+/* Large rounded green border */
+.hrB {
+  border: 5px solid rgb(0, 89, 255);
+  border-radius: 5px;
+}
+
+
+
+.img {
+  position: relative;
+  border: 5px solid rgb(20, 82, 197);
+  border-radius: 10px;
+
+}
+
+
+
+
+.img2 {
+  border: 5px solid rgb(20, 82, 197);
+  border-radius: 10px;
+  background-color: rgba(0,0,0, 0.4);
+}
+
+.subt {
+  border: 5px solid rgb(197, 20, 20);
+  border-radius: 10px;
+  width: 40%;
+  background-color: rgba(0,0,0, 0.4);
+}
+
+
+
+
 </style>
 
 <script>
@@ -519,6 +707,55 @@ function scrollFunction() {
 }
 
 }
+
+function openPage2(pageName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent2");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink2");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+  
+    // Show the specific tab content
+    document.getElementById(pageName).style.display = "block";
+  
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
+  //  .active {
+  //  background-color: #6e1bb1; /* Add an active/current color */
+  //}
+  //    background-color: #555; /* Dark-grey background */
+
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction3()};
+
+// Get the header
+var header2 = document.getElementById("myHeader2");
+
+// Get the offset position of the navbar
+var sticky = header2.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction3() {
+  if (window.pageYOffset > sticky) {
+    header2.classList.add("sticky");
+  } else {
+    header2.classList.remove("sticky");
+  }
+}
+
+
   
 </script>
 </head>
@@ -537,7 +774,7 @@ function scrollFunction() {
       </div>
       <div id="mySidenav2" class="sidenav2">
 
-        <a href="#prtfolio" id="portfolio" onclick="openPage('2', this, 'red')">💼 Portfolio</a>
+        <a href="#portfolio" id="portfolio" onclick="openPage('2', this, 'red')">💼 Portfolio</a>
 
       </div>
     </div>
@@ -559,8 +796,8 @@ function scrollFunction() {
 <div class="bgimg-1">
   <div class="caption">
   <span class="border">
-  <p ><font color="white" size= 3 > <i>NPJ Presents... </i></font></p>  
-  <p ><font color="white" size= 5>Home page of Navaneet.J</font></p>    
+  <p ><font color="white" size= font-size:2.5vw; > <i>NPJ Presents... </i></font></p>  
+  <p ><font color="white" size= font-size:3.75vw;>Home page of Navaneet.J</font></p>    
   
   </span>
   </div>
@@ -569,13 +806,13 @@ function scrollFunction() {
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">Portfolio of Navaneet.J</h3>
   <center>
-   <a href="https://navaneet239.github.io/myPortfolio/"> <button class="button">Click here</button></a>
+   <a href="https://navaneet239.github.io/myPortfolio/"> <button class="button" style="font-size:2vw;">Click here</button></a>
   </center>
 </div>
 
 <div class="bgimg-2">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: black;">
+  <span class="border" style="background-color:transparent;font-size:25px;color: black; font-size:2vw;">
     <p><font color= "white"> TOP ONLINE ACHIEVEMENT </font></p>
   </span>
   </div>
@@ -587,7 +824,7 @@ function scrollFunction() {
     <h2 style="text-align:center;">The alien runner</h2>
     <h5 style="text-align:center;"> Further links will be given. Make sure to open them separately </h5>
     <center>
-      <a href="https://navaneet239.github.io/AlienRunnerGame_HomePage/"> <button class="button">Click here</button></a>
+      <a href="https://navaneet239.github.io/AlienRunnerGame_HomePage/"> <button class="button" style="font-size:2vw;">Click here</button></a>
       <h3>Wanna see more...</h3>
       <p>Please look over the below menu</p>
     </center>  
@@ -598,7 +835,7 @@ function scrollFunction() {
   <a class="active" >navaneet239 → Created links and games </a>
   <h5 style="text-align:right;"> Further links are been given. Make sure to open them separately </h5>
 
-  <button onclick="myFunction2()" class="button2" align="right" ><font size="5">open/close list </font></button>
+  <button onclick="myFunction2()" class="button2" align="right" style="font-size:2vw;"><font size="5">open/close list </font></button>
   <div id="myDIV">
     <div class="search-container">
       <form>
@@ -620,7 +857,7 @@ function scrollFunction() {
 
 <div class="bgimg-3">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Should we meet the end??</span>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7; font-size:2vw;">Should we meet the end??</span>
   </div>
 </div>
 
@@ -633,7 +870,7 @@ function scrollFunction() {
 <div class="bgimg-4">
   <div class="caption">
   <span class="border">
-    <h1>THANK YOU</h1>
+    <h1 style="font-size:2vw;">THANK YOU</h1>
   </span>
   </div>
 </div>
@@ -646,13 +883,264 @@ function scrollFunction() {
 
 <div id="2" class="tabcontent">
 
-  <div class="subheader">
-    <center>
-    <h3> <font color="white">My Portfolio</font></h3>
+  <STYLE>A {
+    text-decoration: none;
 
-    <button class="button2" ><span><a href="https://navaneet239.github.io/myPortfolio/">Portfolio</a></span></button>
-    </center>
+  } 
+  .h1Style {
+  background-color: #000000; /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white; 
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  font-size:2vw;
+  }
+  </STYLE>
+
+
+    <h1 align= "center" style=" font-size:25px; color: #f7f7f7; font-size:2vw;" class="h1Style">PORTFOLIO</h1>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+ <CENTER>
+
+  <button class="tablink2" onclick="openPage2('1b', this, 'red')">About me</button>
+  <button class="tablink2" onclick="openPage2('3b', this, 'red')">achievements</button>
+  <button class="tablink2" onclick="openPage2('4b', this, 'red')">connected sites - profile</button>
+  
+  </CENTER>
+
+  <div id="1b" class="tabcontent2">
+    <font color="white">
+      <h2><strong>My basic details:</strong></h2>
+
+      <ol>
+
+          <li><strong>Name: </strong>Navaneet.J</li>
+          <li><strong>State/country orgin: </strong> Tamil Nadu/India</li>
+          <li><strong>District orgin: </strong>Chennai</li>
+          <li><strong>Mother toungue: </strong>Tamil</li>
+          <li><strong>Mother's name: </strong>Padma.J</li>
+          <li><strong>Father's name: </strong>Jaggannathan.K</li>
+
+      </ol>
+
+      <h2><strong>My highlighting hobbies: </strong></h2>
+      <ul>
+          
+          <li><strong> <i>Art: </i></strong>
+
+              <ol>
+          
+                  <li>drawing and paintings: </li>
+
+                      <ul>
+                  
+                      <li>graphite shading</li>
+                      <li>charcoal shading</li>
+                      <li>colour pencil shading</li>
+                      <li>watercolours</li>
+                      <li>acrilic</li>
+
+                      </ul>
+
+                  <li><i>craft work</i></li>
+
+              </ol>
+          
+          </li>
+
+          <li><strong>Coding: </strong></li>
+
+              <ol>
+
+                  <li>JavaScript</li>
+                  <li>Html 5</li>
+
+              </ol>
+
+          <li><strong>sports: </strong></li>
+
+              <ol>
+
+                  <li>Atlete</li>
+                  <li>gymnastics</li>
+                  <li>cricket</li>
+                  <li>badminton</li>
+
+              </ol>
+
+
+      </ul>
+
+      <br>
+      <br>
+      </font>
+      <CENTER>
+
+              
+      </CENTER>
   </div>
+  
+
+  
+  <div id="3b" class="tabcontent2">
+      <CENTER>
+
+          <div class= "img2">
+
+              <h1><font color= "white"> 2017 </font></h1>
+
+          </div>
+
+          <br>
+
+          <img src="2017.jpg" alt="2018" style="height: 600;", width="500" class="img">
+
+          <br>
+
+          <img src="2017_2.jpg" alt="2018" style="height: 600;", width="500" class="img">
+
+          <br>
+
+          <img src="2017_3.jpg" alt="2018" style="height: 600;", width="500" class="img">
+
+          <br>
+          <br>
+
+
+          <div class= "img2">
+
+              <h1><font color= "white"> 2018 </font></h1>
+
+          </div>
+
+          <br>
+
+          <img src="2018.jpg" alt="2018" style="height: 600;", width="500" class="img">
+
+          <br>
+          <br>
+
+          <div class= "img2">
+
+              <h1><font color= "white"> 2019 </font></h1>
+
+          </div>
+
+          <br>
+
+          <img src="2019.jpg" alt="2018" style="height: 600;", width="500" class="img">
+
+          <br>
+          <br>
+
+          <div class= "img2">
+
+              <h1><font color= "white"> Video games </font></h1>
+
+          </div>
+
+          <br>
+
+          <div class= "subt">
+
+              <h2><font color= "white">  Alien runner game  </font></h2>
+
+          </div>
+
+          <br>
+
+          <button class="button3" style="font-size:2vw;"><a href="https://navaneet239.github.io/NPJ_alienRunnerGame/"><font color= "white">Alien runner game 1</a></button>
+
+          <br>
+          <br>
+
+          <button class="button3" style="font-size:2vw;"><a href="https://navaneet239.github.io/alienRunnerGame2/"><font color= "white">Alien runner game 2</a></button>
+
+          <br>
+          <br>
+
+          <button class="button3" style="font-size:2vw;"><a href="https://navaneet239.github.io/alienRunnerGame3/"><font color= "white">Alien runner game 3</a></button>
+
+          <br>
+          <br>
+
+          <button class="button3" style="font-size:2vw;"><a href="https://navaneet239.github.io/alienRunnerGame4/"><font color= "white">Alien runner game 4</a></button>
+            <br>
+            <br>
+  
+          <button class="button3" style="font-size:2vw;"><a href="https://navaneet239.github.io/AlienRunnerGame5/"><font color= "white">Alien runner game 5</a></button>
+            <br>
+            <br>
+  
+            <button class="button3" style="font-size:2vw;"><a href="https://navaneet239.github.io/alienRunnerGame6/"><font color= "white">Alien runner game 6</a></button>
+  
+          <br>
+          <br>
+          <br>
+
+          <div class= "subt">
+
+              <h2><font color= "white">  Others  </font></h2>
+
+          </div>
+
+          <br>
+
+          <button class="button2" style="font-size:2vw;"><span><a href="https://navaneet239.github.io/spaceJourney/"><font color= "white">Space journey</a></span></button>
+
+          <br>
+          <br>
+
+          <button class="button2" style="font-size:2vw;"><span><a href="https://navaneet239.github.io/NPJ_Rocket_Journey/"><font color= "white">Rocket journey</a></span></button>
+
+          <br>
+          <br>
+
+      </CENTER>
+  </div>
+  
+  <div id="4b" class="tabcontent2">
+      <CENTER>
+
+          <h2><font size= "20" color= "white" style="font-size:4vw;">connected sites - profile</font></h2>
+
+          
+
+          <button class="button" style="font-size:3vw;"><a href="https://github.com/navaneet239"><font color= "white"> <img src="https://github.githubassets.com/pinned-octocat.svg" alt="github" style="height: fit-content;", width="fit-content"> github profile</a></button>
+
+          
+
+          <button class="button" style="font-size:3vw;"><a href="https://www.facebook.com/navaneet.jaggannathan/"><font color= "white"> <img src="faceBoock.png" alt="facebookk logo" style="height: 140;", width="140">facebook profile</a></button>
+
+          
+          <button class="button" style="font-size:3vw;"><a href="https://in.pinterest.com/NavPadJag/"><font color= "white"><img src="pinterest_badge-d9ac575a.svg" alt="facebook logo" style="height: 140;", width="140"> Pinterest profile</a></button>
+
+
+          <button class="button" style="font-size:3vw;"><a href="https://open.spotify.com/user/r2n5niqigeto2gu5uisu0hh3p?si=8-2tD3N9Rui75en6evobcQ&nd=1"><font color= "white"> <img src="Spotify_Logo_RGB_Green-256.webp" alt="spotify logo" style="height: 150", width="150"> spotify profile</a></button>
+          <br>
+          <br>
+
+      </CENTER>
+  </div>
+  
+
+
+
 
 </div>
 
@@ -664,7 +1152,7 @@ function scrollFunction() {
         <h4><font color="grey">Please open the link separately from this page</font></h4>
         <button class="button2" ><span><a href="https://discord.gg/s8tCkeZBtG">Invite link</a></span></button>
         <h4><font color="grey">Server webpage</font></h4>
-        <button class="button2" ><span><a href="https://navaneet239.github.io/npj.InfiniteCosmos/#home">webpage link</a></span></button>
+        <button class="button2" style="font-size:2vw;"><span><a href="https://navaneet239.github.io/npj.InfiniteCosmos/#home">webpage link</a></span></button>
       </center>
     </div>
 </div>
