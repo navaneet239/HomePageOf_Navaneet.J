@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" type="image/x-icon" href="https://iconarchive.com/download/i94935/uiconstock/dynamic-flat-android/home.ico" />
 <title>Home Page of Navaneet.J</title>
 <style>
@@ -14,13 +14,13 @@ body, html {
 }
 
 .bg {
-  background-image: url("https://i.pinimg.com/originals/c7/88/b1/c788b1dbd0e816f4dfa976f5c0001810.jpg");
-
+ /* background-image: url("https://i.pinimg.com/originals/c7/88/b1/c788b1dbd0e816f4dfa976f5c0001810.jpg"); */
+  background-color: rgb(0, 0, 0);
   background-position: center;
   background-size: cover;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-main, .bgimg-2, .bgimg-3, .bgimg-4 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -29,7 +29,7 @@ body, html {
   width: 100%;
 
 }
-.bgimg-1 {
+.bgimg-main {
   background-image: url("NPJ wallpaper 4.gif");
   min-height: 100%;
 }
@@ -295,7 +295,7 @@ h3 {
   right: 0; /* On mouse-over, make the elements appear as they should */
 }
 
-/* Style the links inside the sidenav */
+/* Style the links inside the  */
 #mySidenav3 a {
   position: fixed; /* Position them relative to the browser window */
   left: -110px; /* Position them outside of the screen */
@@ -325,11 +325,6 @@ h3 {
   background-color: #2196F3; /* Blue */
 }
 
-#discord {
-  top: 10px;
-  background-color: #373c3f; /* Blue */
-}
-
 
   /* Style the tab content (and add height:100% for full page content) */
   .tabcontent {
@@ -343,6 +338,7 @@ h3 {
 #1 {background-color: #ffffff;}
 #2 {background-color: red}
 #3 {background-color: red}
+#4 {background-color: red}
 
 * {box-sizing: border-box;}
 
@@ -359,7 +355,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 99;
+  z-index: 110;
   
 }
 
@@ -485,43 +481,7 @@ body, html {
     font-family: Arial;
     
   }
-  
-  /* Style tab links */
-  .tablink2 {
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #006eff;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px rgb(102, 156, 218);
-    width: 32%;
-    font-size:2vw;
 
-
-  }
-  
-  .tablink2:hover {
-    background-color: #08305e;
-  }
-  
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent2 {
-    color: black;
-    display: none;
-    
-    padding: 100px 20px;
-    height: 120%;
-    font-size:2vw;
-  }
-  
-  #1b {background-color: red;}
-  #2b {background-color: red;}
-  #3b {background-color: red;}
-  #4b {background-color: red;}
 
   body, html {
     height: 100%;
@@ -631,6 +591,7 @@ body, html {
   border: 5px solid rgb(20, 82, 197);
   border-radius: 10px;
   background-color: rgba(0,0,0, 0.4);
+  margin-left: 7%;
 }
 
 .subt {
@@ -730,6 +691,70 @@ A {text-decoration: none; color: white;}
   opacity: 1;
   right: 0;
 }
+
+
+.sidenav01 {
+  height: 95%;
+  width: 5%;
+  position: fixed;
+  border-radius: 15px;
+  z-index: 100;
+  top: -1%;
+  left: 1%;
+  transform: translate(5%, 3.5%);
+  background-color: #111;
+  overflow-x: auto;
+  padding-top: 20px;
+}
+
+.sidenav01 a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: font-size 0.5s;
+
+}
+
+.sidenav01 a:hover {
+  color: #f1f1f1;
+  font-size: 30px;
+  
+}
+
+.main {
+  margin-left: 7%; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidenar01 {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidenar01 a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidenar01 a {
+    text-align: center;
+    float: none;
+  }
+}
+
 
 </style>
 
@@ -841,66 +866,41 @@ function myFunction3() {
   }
 }
 
-
-  
 </script>
 </head>
+
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body class="bg" bgcolor="black">
 
-  
 
-  <div id="navbar">
-    <a href="#default" id="logo"><img src="NPJ group of companies official logo (without background)-2.png" alt="log" width="150" height="100"></a>
-
-    <div class="alert">
-      <br>
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-      <center>
-        <strong><a href="info.html" class="button4"><span>click here to know about the home page</span></a> </strong> 
-      </center>
-      <br>
-      <p><font size="2.75"><i>Make sure to open this link in a new tab (if using Pc) or click on it and after you read, click back button (If using phone)</i></font></p>
-      <br>
-    </div>
-
-    <div id="navbar-right">
-
-      <div id="mySidenav" class="sidenav">
-
-        <a href="#home" id="home" onclick="openPage('1', this, 'rgb(255, 255, 255)')" >🏠 Home</a>
-    
-      </div>
-      <div id="mySidenav2" class="sidenav2">
-
-        <a href="#portfolio" id="portfolio" onclick="openPage('2', this, 'red')">💼 Portfolio</a>
-
-      </div>
-    </div>
-  </div>
-  
-  <div id="mySidenav3" class="sidenav3">
-
-    <a href="#discord" id="discord" onclick="openPage('3', this, 'red')" align="center">My Discord community server</a>
-    
+  <div class="sidenav01" align="CENTER, middle" >
+    <a href="#default" id="logo" style= " transform: translate(-15%, -25%); "><img src="NPJ Official logo.png" alt="log" width="50" height="50"></a>
+    <hr style="width: 75%; color: rgb(70, 70, 70); transform: translate(-1%, -2000%); ">
+    <a href="#home" size= font-size:2.5vw; onclick="openPage('1', this, 'rgb(255, 255, 255)')"><i class="fa fa-fw fa-home"></i></a>
+    <a href="#Profile" size= font-size:2.5vw; onclick="openPage('2', this, 'red')"><i class="fa fa-fw fa-user"></i></a>
+    <a href="#achievements" size= font-size:2.5vw; onclick="openPage('3', this, 'red')"><i class="fa fa-fw fa-trophy"></i> </a>
+    <a href="#contact" size= font-size:2.5vw; onclick="openPage('4', this, 'red')"><i class="fa fa-fw fa-envelope"></i> </a>
+    </div> 
   </div>
 
-  <br>
-  <br>
-  <br>
+  <div class="main">
 
-
-<script>
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
 
   <div id="1" class="tabcontent">
-<div class="bgimg-1">
+<div class="bgimg-main">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
   <div class="caption">
   <span class="border">
   <p ><font color="white" size= font-size:2.5vw; > <i>NPJ Presents... </i></font></p>  
@@ -990,101 +990,81 @@ function off() {
 
 <div id="2" class="tabcontent">
 
-  <STYLE>A {
-    text-decoration: none;
+  <font color="white">
+    <h2><strong>My basic details:</strong></h2>
 
-  } 
-  </STYLE>
+    <ol>
+
+        <li><strong>Name: </strong>Navaneet.J</li>
+        <li><strong>State/country orgin: </strong> Tamil Nadu/India</li>
+        <li><strong>District orgin: </strong>Chennai</li>
+        <li><strong>Mother toungue: </strong>Tamil</li>
+        <li><strong>Mother's name: </strong>Padma.J</li>
+        <li><strong>Father's name: </strong>Jaggannathan.K</li>
+
+    </ol>
+
+    <h2><strong>My highlighting hobbies: </strong></h2>
+    <ul>
+        
+        <li><strong> <i>Art: </i></strong>
+
+            <ol>
+        
+                <li>drawing and paintings: </li>
+
+                    <ul>
+                
+                    <li>graphite shading</li>
+                    <li>charcoal shading</li>
+                    <li>colour pencil shading</li>
+                    <li>watercolours</li>
+                    <li>acrilic</li>
+
+                    </ul>
+
+                <li><i>craft work</i></li>
+
+            </ol>
+        
+        </li>
+
+        <li><strong>Coding: </strong></li>
+
+            <ol>
+
+                <li>JavaScript</li>
+                <li>Html 5</li>
+
+            </ol>
+
+        <li><strong>sports: </strong></li>
+
+            <ol>
+
+                <li>Atlete</li>
+                <li>gymnastics</li>
+                <li>cricket</li>
+                <li>badminton</li>
+
+            </ol>
 
 
-    <h1 align= "center" style=" font-size:32.5px; color: #f7f7f7;">PORTFOLIO</h1>
+    </ul>
 
     <br>
+    <br>
+    </font>
+    <CENTER>
 
-    
- <CENTER>
+            
+    </CENTER>
+</div>
 
-  <button class="tablink2" onclick="openPage2('1b', this, 'red')">About me</button>
-  <button class="tablink2" onclick="openPage2('3b', this, 'red')">achievements</button>
-  <button class="tablink2" onclick="openPage2('4b', this, 'red')">connected sites - profile</button>
-  
-  </CENTER>
-
-  <div id="1b" class="tabcontent2">
-    <font color="white">
-      <h2><strong>My basic details:</strong></h2>
-
-      <ol>
-
-          <li><strong>Name: </strong>Navaneet.J</li>
-          <li><strong>State/country orgin: </strong> Tamil Nadu/India</li>
-          <li><strong>District orgin: </strong>Chennai</li>
-          <li><strong>Mother toungue: </strong>Tamil</li>
-          <li><strong>Mother's name: </strong>Padma.J</li>
-          <li><strong>Father's name: </strong>Jaggannathan.K</li>
-
-      </ol>
-
-      <h2><strong>My highlighting hobbies: </strong></h2>
-      <ul>
-          
-          <li><strong> <i>Art: </i></strong>
-
-              <ol>
-          
-                  <li>drawing and paintings: </li>
-
-                      <ul>
-                  
-                      <li>graphite shading</li>
-                      <li>charcoal shading</li>
-                      <li>colour pencil shading</li>
-                      <li>watercolours</li>
-                      <li>acrilic</li>
-
-                      </ul>
-
-                  <li><i>craft work</i></li>
-
-              </ol>
-          
-          </li>
-
-          <li><strong>Coding: </strong></li>
-
-              <ol>
-
-                  <li>JavaScript</li>
-                  <li>Html 5</li>
-
-              </ol>
-
-          <li><strong>sports: </strong></li>
-
-              <ol>
-
-                  <li>Atlete</li>
-                  <li>gymnastics</li>
-                  <li>cricket</li>
-                  <li>badminton</li>
-
-              </ol>
+</div>
 
 
-      </ul>
-
-      <br>
-      <br>
-      </font>
-      <CENTER>
-
-              
-      </CENTER>
-  </div>
-  
-
-  
-  <div id="3b" class="tabcontent2">
+  <div id="3" class="tabcontent">
       <CENTER>
 
           <div class= "img2">
@@ -1201,7 +1181,7 @@ function off() {
       </CENTER>
   </div>
   
-  <div id="4b" class="tabcontent2">
+  <div id="4" class="tabcontent">
       <CENTER>
 
           <h2><font size= "20" color= "white" style="font-size:4vw;">connected sites - profile</font></h2>
@@ -1231,18 +1211,9 @@ function off() {
 
 </div>
 
-<div id="3" class="tabcontent">
 
-    <div class="subheader2">
-      <center>
-        <h3> <font color="white">Please Do join our Discord community server!</font></h3>
-        <h4><font color="grey">Please open the link separately from this page</font></h4>
-        <button class="button2" ><span><a href="https://discord.gg/s8tCkeZBtG">Invite link</a></span></button>
-        <h4><font color="grey">Server webpage</font></h4>
-        <button class="button2" style="font-size:2vw;"><span><a href="https://navaneet239.github.io/npj.InfiniteCosmos/#home">webpage link</a></span></button>
-      </center>
-    </div>
-</div>
 
+  </div>
+  
 </body>
 </html>
