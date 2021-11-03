@@ -695,12 +695,12 @@ A {text-decoration: none; color: white;}
 
 
 .sidebar {
-  height: 100%;
-  width: 7.75%;
+  height: 85%;
+  width: 10%;
   border-radius: 15px;
   position: fixed;
   z-index: 1;
-  top: -1%;
+  bottom: -1%;
   left: 1%;
   bottom: -0.5%;
   background-color: #111;
@@ -710,9 +710,9 @@ A {text-decoration: none; color: white;}
 }
 
 .sidebar a {
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px 25px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.75vw;
   color: #818181;
   display: block;
   transition: font-size 0.5s;
@@ -725,27 +725,28 @@ A {text-decoration: none; color: white;}
 
 .sidebar a:hover:not(.active) {
   color: #00c3ff;
-  font-size: 40px;
 
 }
 
 div.main {
-  margin-left: 7.9%;
+  margin-left: 10.1%;
   padding: 1px 16px;
 }
 
 @media screen and (max-width: 700px) {
   .sidebar {
-    width: 100%;
+    width: 80%;
     height: auto;
     position: relative;
     top: -1%;
     left: 0;
+    float: right;
     transform: translate(0, 0);
     vertical-align: middle;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+
+  .sidebar a {float: right; font-size: 2.75vw;}
+  div.main {margin-left: 0;}
 }
 
 @media screen and (max-width: 400px) {
@@ -753,6 +754,10 @@ div.main {
     text-align: center;
     float: none;
   }
+}
+
+.sidebar #logo {
+  image-resolution:initial;
 }
 
 .change{
@@ -776,6 +781,7 @@ div.main {
   color: #818181;
   display: block;
   transition: font-size 0.5s;
+  text-align: center;
 }
 
 .change a:hover:not(.active) {
@@ -816,6 +822,19 @@ function myFunction2() {
   }
 }
 
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("sidebar").style.padding = "5px 5px";
+
+  } else {
+    document.getElementById("sidebar").style.padding = "25px 5px";
+
+  }
+}
+
 function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
     var i, tabcontent, tablinks;
@@ -833,18 +852,6 @@ function openPage(pageName, elmnt, color) {
     // Show the specific tab content
     document.getElementById(pageName).style.display = "block";
 
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "5px 5px";
-
-  } else {
-    document.getElementById("navbar").style.padding = "25px 5px";
-
-  }
-}
 
 }
 
@@ -907,13 +914,14 @@ function myFunction3() {
     <a href="info.html" size= font-size:2.5vw;> Change to previous UI</a>
   </div>
 
+  <a href="#default" id="logo" style="text-align: CENTER;  "><img src="NPJ Official logo.png" alt="log" width="85" height="85"></a>
+
   <div class="sidebar" style="text-align: CENTER;">
-    <a href="#default" id="logo" style="text-align: CENTER;"><img src="NPJ Official logo.png" alt="log" width="75" height="75"></a>
-    <a href="#home" size= font-size:2.5vw; onclick="openPage('1', this, 'rgb(255, 255, 255)')"><i class="fa fa-fw fa-home"></i></a>
-    <a href="#Profile" size= font-size:2.5vw; onclick="openPage('2', this, 'red')"><i class="fa fa-fw fa-user"></i></a>
-    <a href="#achievements" size= font-size:2.5vw; onclick="openPage('3', this, 'red')"><i class="fa fa-fw fa-trophy"></i> </a>
-    <a href="#contact" size= font-size:2.5vw; onclick="openPage('4', this, 'red')"><i class="fa fa-fw fa-envelope"></i> </a>
-    </div> 
+    <a href="#home" size= font-size:2.5vw; onclick="openPage('1', this, 'rgb(255, 255, 255)')"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="#Profile" size= font-size:2.5vw; onclick="openPage('2', this, 'red')"><i class="fa fa-fw fa-user"></i>Profile</a>
+    <a href="#achievements" size= font-size:2.5vw; onclick="openPage('3', this, 'red')"><i class="fa fa-fw fa-trophy"></i>Awards</a>
+    <a href="#contact" size= font-size:2.5vw; onclick="openPage('4', this, 'red')"><i class="fa fa-fw fa-envelope"></i>Sites</a>
+  </div> 
   </div>
 
   <div class="main">
