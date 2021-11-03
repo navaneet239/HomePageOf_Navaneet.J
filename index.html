@@ -696,16 +696,16 @@ A {text-decoration: none; color: white;}
 
 .sidebar {
   height: 85%;
-  width: 10%;
+  width: auto;
   border-radius: 15px;
   position: fixed;
-  z-index: 1;
+  z-index: 200;
   bottom: -1%;
   left: 1%;
-  bottom: -0.5%;
+  top:5%;
   background-color: #111;
   transform: translate(5%, 3.5%);
-  overflow-x: hidden;
+  overflow-x:visible;
   padding-top: 20px;
 }
 
@@ -729,23 +729,28 @@ A {text-decoration: none; color: white;}
 }
 
 div.main {
-  margin-left: 10.1%;
+  margin-left: 13%;
   padding: 1px 16px;
 }
 
 @media screen and (max-width: 700px) {
   .sidebar {
-    width: 80%;
+    width: 95%;
     height: auto;
     position: relative;
-    top: -1%;
-    left: 0;
-    float: right;
+    top: 2%;
+    left: -2%;
+    float: left;
     transform: translate(0, 0);
     vertical-align: middle;
+    
   }
 
-  .sidebar a {float: right; font-size: 2.75vw;}
+  .sidebar hr {
+    display: none;
+  }
+
+  .sidebar a {   padding: 6px 8px 25px 16px; float: left; font-size: 2.75vw;}
   div.main {margin-left: 0;}
 }
 
@@ -754,16 +759,19 @@ div.main {
     text-align: center;
     float: none;
   }
+
+  .sidebar hr {
+    display: block;
+  }
+  
 }
 
-.sidebar #logo {
-  image-resolution:initial;
-}
+
 
 .change{
   height:fit-content;
   width: fit-content;
-  border-radius: 45px;
+  border-radius: 10px;
   position: fixed;
   z-index: 999;
   bottom: 1%;
@@ -911,18 +919,26 @@ function myFunction3() {
 <body class="bg" bgcolor="black">
 
   <div class="change">
-    <a href="info.html" size= font-size:2.5vw;> Change to previous UI</a>
+    <a href="info.html" size= font-size:2.5vw; style="text-align: center;"> Change to previous UI</a>
   </div>
 
-  <a href="#default" id="logo" style="text-align: CENTER;  "><img src="NPJ Official logo.png" alt="log" width="85" height="85"></a>
 
   <div class="sidebar" style="text-align: CENTER;">
+    <a href="#default" id="logo" style="text-align: CENTER;  "><img src="NPJ Official logo.png" alt="log" width="85" height="85"></a>
+    <hr style="width: 75%; color: rgb(107, 107, 107);">
     <a href="#home" size= font-size:2.5vw; onclick="openPage('1', this, 'rgb(255, 255, 255)')"><i class="fa fa-fw fa-home"></i>Home</a>
     <a href="#Profile" size= font-size:2.5vw; onclick="openPage('2', this, 'red')"><i class="fa fa-fw fa-user"></i>Profile</a>
     <a href="#achievements" size= font-size:2.5vw; onclick="openPage('3', this, 'red')"><i class="fa fa-fw fa-trophy"></i>Awards</a>
     <a href="#contact" size= font-size:2.5vw; onclick="openPage('4', this, 'red')"><i class="fa fa-fw fa-envelope"></i>Sites</a>
   </div> 
   </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
 
   <div class="main">
 
@@ -936,9 +952,7 @@ function myFunction3() {
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
+
 
   <div class="caption">
   <span class="border">
@@ -981,7 +995,7 @@ function myFunction3() {
   <a class="active" >navaneet239 → Created links and games </a>
   <h5 style="text-align:right;"> Further links are been given. Make sure to open them separately </h5>
 
-  <button onclick="myFunction2()" class="button2" align="right" style="font-size:2vw;"><font size="5">open/close list </font></button>
+  <button onclick="myFunction2()" class="button" align="right" style="font-size:2vw;"><font size="5">open/close list </font></button>
   <div id="myDIV">
     <div class="search-container">
       <form>
@@ -1207,12 +1221,12 @@ function myFunction3() {
 
           <br>
 
-          <button class="button2" style="font-size:2vw;"><span><a href="https://navaneet239.github.io/spaceJourney/"><font color= "white">Space journey</a></span></button>
+          <button class="button" style="font-size:2vw;"><span><a href="https://navaneet239.github.io/spaceJourney/"><font color= "white">Space journey</a></span></button>
 
           <br>
           <br>
 
-          <button class="button2" style="font-size:2vw;"><span><a href="https://navaneet239.github.io/NPJ_Rocket_Journey/"><font color= "white">Rocket journey</a></span></button>
+          <button class="button" style="font-size:2vw;"><span><a href="https://navaneet239.github.io/NPJ_Rocket_Journey/"><font color= "white">Rocket journey</a></span></button>
 
           <br>
           <br>
