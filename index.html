@@ -592,6 +592,7 @@ body, html {
   border-radius: 10px;
   background-color: rgba(0,0,0, 0.4);
   margin-left: 7%;
+  width: 50%;
 }
 
 .subt {
@@ -693,63 +694,63 @@ A {text-decoration: none; color: white;}
 }
 
 
-.sidenav01 {
-  height: 95%;
-  width: 5%;
-  position: fixed;
+
+.sidebar {
+  height: 100%;
+  width: 7.75%;
   border-radius: 15px;
-  z-index: 100;
+  position: fixed;
+  z-index: 1;
   top: -1%;
   left: 1%;
-  transform: translate(5%, 3.5%);
+  bottom: -0.5%;
   background-color: #111;
-  overflow-x: auto;
+  transform: translate(5%, 3.5%);
+  overflow-x: hidden;
   padding-top: 20px;
 }
 
-.sidenav01 a {
+.sidebar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
   transition: font-size 0.5s;
-
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
-.sidenav01 a:hover {
+.sidebar a:hover:not(.active) {
   color: #f1f1f1;
   font-size: 30px;
-  
+
 }
 
-.main {
-  margin-left: 7%; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
+div.main {
+  margin-left: 7.9%;
   padding: 1px 16px;
-  height: 1000px;
 }
 
 @media screen and (max-width: 700px) {
-  .sidenar01 {
+  .sidebar {
     width: 100%;
     height: auto;
     position: relative;
+    top: -1%;
+    left: 0;
+    transform: translate(0, 0);
+    vertical-align: middle;
   }
-  .sidenar01 a {float: left;}
+  .sidebar a {float: left;}
   div.content {margin-left: 0;}
 }
 
 @media screen and (max-width: 400px) {
-  .sidenar01 a {
+  .sidebar a {
     text-align: center;
     float: none;
   }
@@ -875,9 +876,8 @@ function myFunction3() {
 <body class="bg" bgcolor="black">
 
 
-  <div class="sidenav01" align="CENTER, middle" >
-    <a href="#default" id="logo" style= " transform: translate(-15%, -25%); "><img src="NPJ Official logo.png" alt="log" width="50" height="50"></a>
-    <hr style="width: 75%; color: rgb(70, 70, 70); transform: translate(-1%, -2000%); ">
+  <div class="sidebar" style="text-align: CENTER;">
+    <a href="#default" id="logo" style="text-align: CENTER;"><img src="NPJ Official logo.png" alt="log" width="75" height="75"></a>
     <a href="#home" size= font-size:2.5vw; onclick="openPage('1', this, 'rgb(255, 255, 255)')"><i class="fa fa-fw fa-home"></i></a>
     <a href="#Profile" size= font-size:2.5vw; onclick="openPage('2', this, 'red')"><i class="fa fa-fw fa-user"></i></a>
     <a href="#achievements" size= font-size:2.5vw; onclick="openPage('3', this, 'red')"><i class="fa fa-fw fa-trophy"></i> </a>
