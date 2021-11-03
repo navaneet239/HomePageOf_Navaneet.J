@@ -725,8 +725,8 @@ A {text-decoration: none; color: white;}
 }
 
 .sidebar a:hover:not(.active) {
-  color: #f1f1f1;
-  font-size: 30px;
+  color: #00c3ff;
+  font-size: 40px;
 
 }
 
@@ -754,6 +754,35 @@ div.main {
     text-align: center;
     float: none;
   }
+}
+
+.change{
+  height:fit-content;
+  width: fit-content;
+  border-radius: 45px;
+  position: fixed;
+  z-index: 999;
+  bottom: 1%;
+  right: 1%;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;}
+
+.change a {
+  padding: 6px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #818181;
+  display: block;
+  transition: font-size 0.5s;
+}
+
+.change a:hover:not(.active) {
+  color: #00c3ff;
+  font-size: 20px;
+
 }
 
 
@@ -875,6 +904,9 @@ function myFunction3() {
 
 <body class="bg" bgcolor="black">
 
+  <div class="change">
+    <a href="info.html" size= font-size:2.5vw;> Change to previous UI</a>
+  </div>
 
   <div class="sidebar" style="text-align: CENTER;">
     <a href="#default" id="logo" style="text-align: CENTER;"><img src="NPJ Official logo.png" alt="log" width="75" height="75"></a>
