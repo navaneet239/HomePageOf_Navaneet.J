@@ -65,6 +65,7 @@ body, html {
   color: white; 
   font-weight: bold;
   border: 3px solid #f1f1f1;
+  border-radius: 20px;
   position: absolute;
   top: 25%;
   left: 50%;
@@ -338,6 +339,8 @@ h3 {
 #2 {background-color: red}
 #3 {background-color: red}
 #4 {background-color: red}
+#5 {background-color: red}
+
 
 * {box-sizing: border-box;}
 
@@ -874,16 +877,16 @@ function myFunction3() {
 <body class="bg" bgcolor="black">
 
   <div class="change">
-    <a href="info.html" size= font-size:2.5vw; style="text-align: center;"> Change to previous UI</a>
+    <a href="info.html" size= font-size:2.5vw; style="text-align: center;"><i class="fa fa-fw fa-desktop"></i> Change to previous UI</a>
   </div>
 
 
   <div class="sidebar" style="text-align: CENTER; padding-top: -35; ">
     <a href="#default" id="logo" style="text-align: CENTER;"><img src="NPJ Official logo.png" alt="log" width="85" height="85"></a>
-    <a href="#home" style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('1', this, 'rgb(255, 255, 255)')"><i class="fa fa-fw fa-home"></i>Home</a>
-    <a href="#Profile"  style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('2', this, 'red')"><i class="fa fa-fw fa-user"></i>Profile</a>
-    <a href="#achievements"  style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('3', this, 'red')"><i class="fa fa-fw fa-trophy"></i>Awards</a>
-    <a href="#contact"   style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('4', this, 'red')"><i class="fa fa-fw fa-envelope"></i>Sites</a>
+    <a href="#home" style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('2', this, 'rgb(255, 255, 255)')"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="#Profile"  style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('3', this, 'red')"><i class="fa fa-fw fa-user"></i>Profile</a>
+    <a href="#achievements"  style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('4', this, 'red')"><i class="fa fa-fw fa-trophy"></i>Awards</a>
+    <a href="#contact"   style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('5', this, 'red')"><i class="fa fa-fw fa-envelope"></i>Sites</a>
   </div> 
   </div>
 
@@ -892,8 +895,36 @@ function myFunction3() {
 
   <div class="main">
 
+    <div id="1" class="tabcontent" style="display: block;">
 
-  <div id="1" class="tabcontent">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+        <div class="caption">
+        <span class="border" style="border-radius: 20px;">
+        
+        <img src="https://iconarchive.com/download/i94935/uiconstock/dynamic-flat-android/home.ico" width="100px" height="100px">
+        <p ><font color="white" size= 5vw; >Home page of Navaneet.J</font></p>    
+        <p ><font color="white" size= 3vw; > <i>Choose one of the sections from the navigation bar to start the journey!</i></font></p>  
+
+        </span>
+        </div>
+
+    </div>
+
+  <div id="2" class="tabcontent">
 <div class="bgimg-main">
   <br>
   <br>
@@ -996,7 +1027,7 @@ function myFunction3() {
 
 </div>
 
-<div id="2" class="tabcontent">
+<div id="3" class="tabcontent">
 
   <font color="white">
     <h2><strong>My basic details:</strong></h2>
@@ -1072,7 +1103,7 @@ function myFunction3() {
 </div>
 
 
-  <div id="3" class="tabcontent">
+  <div id="4" class="tabcontent">
       <CENTER>
 
           <div class= "img2">
@@ -1194,7 +1225,7 @@ function myFunction3() {
       </CENTER>
   </div>
   
-  <div id="4" class="tabcontent">
+  <div id="5" class="tabcontent">
       <CENTER>
 
           <h2><font size= "20" color= "white" style="font-size:4vw;">connected sites - profile</font></h2>
