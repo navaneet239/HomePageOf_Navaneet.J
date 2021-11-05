@@ -66,6 +66,7 @@ body, html {
   color: white; 
   font-weight: bold;
   border: 3px solid #f1f1f1;
+  border-radius: 20px;
   position: absolute;
   top: 25%;
   left: 50%;
@@ -729,7 +730,7 @@ A {text-decoration: none; color: white;}
 .change{
   height:fit-content;
   width: fit-content;
-  border-radius: 45px;
+  border-radius: 10px;
   position: fixed;
   z-index: 999;
   bottom: 1%;
@@ -744,10 +745,11 @@ A {text-decoration: none; color: white;}
 .change a {
   padding: 6px 8px 20px 16px;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 15px;
   color: #818181;
   display: block;
   transition: font-size 0.5s;
+  text-align: center;
 }
 
 .change a:hover:not(.active) {
@@ -809,7 +811,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "5px 5px";
+    document.getElementById("navbar").style.padding = "3px 5px";
 
   } else {
     document.getElementById("navbar").style.padding = "25px 5px";
@@ -872,12 +874,20 @@ function myFunction3() {
 </head>
 <body class="bg" bgcolor="black">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <div class="change">
-    <a href="index.html" size= font-size:2.5vw;> Change to present UI</a>
+    <a href="index.html" size= font-size:2.5vw;><i class="fa fa-fw fa-desktop"></i>  Change to present UI</a>
   </div>
 
   <div id="navbar">
-    <a href="#default" id="logo"><img src="NPJ group of companies official logo (without background)-2.png" alt="log" width="150" height="100"></a>
+    <a href="#default" id="logo">
+      <img src="NPJ group of companies official logo (without background)-2.png" alt="log" width="150" height="100"> 
+      <font style="padding-bottom: 100%;">•</font>
+      <img src="https://iconarchive.com/download/i94935/uiconstock/dynamic-flat-android/home.ico" width="75px" height="75px"><p ><font size= 5vw; style="font-family: fantasy;">Home page of Navaneet.J</font></p>    
+    </a>
+
 
     <div id="navbar-right">
 
@@ -897,7 +907,7 @@ function myFunction3() {
   <br>
   <br>
   <br>
-
+  <br>
 
 <script>
 function on() {
