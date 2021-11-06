@@ -664,6 +664,8 @@ A {text-decoration: none; color: white;}
   color: #818181;
   display: block;
   transition: width 2s, height 2s, transform 2s;
+  text-shadow: 0 0 10px rgb(0, 0, 0); 
+
 }
  
 .sidebar a.active {
@@ -698,6 +700,10 @@ div.main {
     
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   .sidebar a {     float: left; font-size: 2.75vw;}
   div.main {margin-left: 0;   transform: translateY(75px);
 }
@@ -726,7 +732,10 @@ div.main {
   overflow-x: hidden;
   padding-top: 10px;
   padding-right: 5px;
-  padding-left: 5px;}
+  padding-left: 5px;
+
+}
+  
 
 .change a {
   padding: 6px 8px 20px 16px;
@@ -757,6 +766,9 @@ div.main {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
+  box-shadow: inset 2.5px 0 10px rgb(0, 0, 0); 
+  box-shadow: outset 2.5px 0 10px rgb(255, 255, 255); 
+
   background: rgb(0, 217, 255); 
   border-radius: 10px;
 }
@@ -897,6 +909,12 @@ function myFunction3() {
 
     <div id="1" class="tabcontent" style="display: block;">
 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <br>
       <br>
       <br>
