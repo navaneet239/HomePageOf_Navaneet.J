@@ -338,6 +338,8 @@ h3 {
 
 #1 {background-color: #ffffff;}
 #2 {background-color: red}
+#3 {background-color: red}
+
 
 * {box-sizing: border-box;}
 
@@ -758,6 +760,46 @@ A {text-decoration: none; color: white;}
 
 }
 
+.infoMain {
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  border-color: white;
+  background-color: rgba(17, 17, 17, 0.459);
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: center;
+  font-size:2vw;
+  padding: 6px 8px 20px 16px;
+
+  background-color: #000000; /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white; 
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  border-radius: 20px;
+}
+
+
+.infoMain a {
+  padding: 6px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  font-size:2vw;
+  font-family: fantasy;
+}
+
+
+
 </style>
 
 <script>
@@ -884,8 +926,6 @@ function myFunction3() {
   <div id="navbar">
     <a href="#default" id="logo">
       <img src="NPJ group of companies official logo (without background)-2.png" alt="log" width="150" height="100"> 
-      <font style="padding-bottom: 100%;">•</font>
-      <img src="https://iconarchive.com/download/i94935/uiconstock/dynamic-flat-android/home.ico" width="75px" height="75px"><p ><font size= 5vw; style="font-family: fantasy;">Home page of Navaneet.J</font></p>    
     </a>
 
 
@@ -893,12 +933,12 @@ function myFunction3() {
 
       <div id="mySidenav" class="sidenav">
 
-        <a href="#home" id="home" onclick="openPage('1', this, 'rgb(255, 255, 255)')" >🏠 Home</a>
+        <a href="#home" id="home" onclick="openPage('2', this, 'rgb(255, 255, 255)')" >🏠 Home</a>
     
       </div>
       <div id="mySidenav2" class="sidenav2">
 
-        <a href="#portfolio" id="portfolio" onclick="openPage('2', this, 'red')">💼 Portfolio</a>
+        <a href="#portfolio" id="portfolio" onclick="openPage('3', this, 'red')">💼 Portfolio</a>
 
       </div>
     </div>
@@ -919,7 +959,19 @@ function off() {
 }
 </script>
 
-  <div id="1" class="tabcontent">
+<div id="1" class="tabcontent" style="display: block;">
+
+  <div class="infoMain">
+    <span class="border" >
+      <img src="https://iconarchive.com/download/i94935/uiconstock/dynamic-flat-android/home.ico" width="100px" height="100px">
+      <p ><font color="white" size= 5vw; >Home page of Navaneet.J</font></p>    
+      <p ><font color="white" size= 3vw; > <i>Choose one of the sections from the navigation bar to start the journey!</i></font></p>  
+    </span>
+  </div>
+
+</div>
+
+  <div id="2" class="tabcontent">
 <div class="bgimg-1">
   <div class="caption">
   <span class="border">
@@ -1008,7 +1060,7 @@ function off() {
 
 </div>
 
-<div id="2" class="tabcontent">
+<div id="3" class="tabcontent">
 
   <STYLE>A {
     text-decoration: none;
