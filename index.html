@@ -662,7 +662,7 @@ A {text-decoration: none; color: white;}
   font-size: 22.5px;
   color: #818181;
   display: block;
-  transition: width 2s, height 2s, transform 2s;
+  transition: font-size 0.5s, width 2s, height 2s, transform 2s;
   text-shadow: 0 0 10px rgb(0, 0, 0); 
 
 }
@@ -674,9 +674,9 @@ A {text-decoration: none; color: white;}
 
 .sidebar a:hover:not(.active) {
   color: #00c3ff;
-  transform: rotate(360deg)
-
+  transform: rotate(360deg);
 }
+
 
 div.main {
   margin-left: 13%;
@@ -721,11 +721,21 @@ div.main {
 
 
   .sidebar a {     float: left; font-size: 2.75vw;}
+
+  .sidebar a:hover:not(.active) {
+  color: #00c3ff;
+  font-size: 4vw;
+  transform: rotate(0deg);
+
+}
+
   div.main {margin-left: 0;   transform: translateY(75px);
 }
 }
 
 @media screen and (max-width: 400px) {
+
+
 
   .sidebar a {
     text-align: center;
@@ -778,7 +788,6 @@ div.main {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
  
@@ -925,7 +934,7 @@ function myFunction3() {
 
 
   <div class="sidebar" style="text-align: CENTER; padding-top: -35; ">
-    <a href="#default" id="logo" style="text-align: CENTER;"><img src="NPJ Official logo.png" alt="log" width="85" height="85"></a>
+    <a href="#default" id="logo" style="text-align: CENTER; transform: rotate(0deg);"><img src="https://iconarchive.com/download/i94935/uiconstock/dynamic-flat-android/home.ico" alt="log" width="80" height="80"></a>
     <a href="#home" style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('2', this, 'rgb(255, 255, 255)')"><i class="fa fa-fw fa-home"></i>Home</a>
     <a href="#Profile"  style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('3', this, 'red')"><i class="fa fa-fw fa-user"></i>Profile</a>
     <a href="#achievements"  style=" padding-top: 35px;" size= font-size:2.5vw; onclick="openPage('4', this, 'red')"><i class="fa fa-fw fa-trophy"></i>Awards</a>
