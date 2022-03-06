@@ -287,6 +287,44 @@ h3 {
   
 }
 
+.infoMain {
+
+position: absolute;
+left: 25%;
+top: 25%;
+width: 50%;
+height: fit-content;
+border-radius: 10px;
+border-color: white;
+background-color: rgba(17, 17, 17, 0.459);
+overflow-x: hidden;
+padding-top: 10px;
+padding-right: 5px;
+padding-left: 5px;
+text-align: center;
+font-size:2vw;
+padding: 6px 8px 20px 16px;
+
+background-color: #000000; /* Fallback color */
+background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+color: white; 
+font-weight: bold;
+border: 3px solid #f1f1f1;
+border-radius: 20px;
+}
+
+
+.infoMain a {
+padding: 6px 8px 20px 16px;
+text-decoration: none;
+font-size: 15px;
+color: #ffffff;
+display: block;
+text-align: center;
+font-size:1.5vw;
+font-family: fantasy;
+}
+
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
@@ -462,6 +500,46 @@ div.main {
   color: white;
 }
 
+.change{
+  height:auto;
+  width: 200px;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 999;
+  bottom: 0.5%;
+  right: 1%;
+  background-color: #111;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  transition: font-size 0.5s, transform 2s;
+
+
+}
+
+.change :hover{
+  transform: matrix(1, 2, 3, 4, 5, 6)  matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) scale( 1, 1) rotate(360deg) ;
+}
+
+.change a {
+  transition: font-size 0.5s, transform 2s;
+
+  padding: 6px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  text-align: center;
+}
+
+.change a:hover:not(.active) {
+  color: #00c3ff;
+  transform: matrix(1, 2, 3, 4, 5, 6)  matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) scale( 1, 1) rotate(360deg) ;
+}
+
+
 @media screen and (max-width: 600px) {
   
   .topnav a:not(:first-child) {display: none;}
@@ -520,6 +598,10 @@ div.main {
   div.main {margin-left: 0;   transform: translateY(75px);}
 
   .bottomnav{
+    display: none;
+  }
+
+  .change{
     display: none;
   }
 
@@ -591,9 +673,7 @@ document.getElementById("defaultOpen").click();
 
 <body class="bg" bgcolor="black">
 
-
-
-  <div class="topnav" id="myTopnav" style="text-align: CENTER;">
+ <div class="topnav" id="myTopnav" style="text-align: CENTER;">
     <CENTER>
       <a href="#default" style="text-align: CENTER; transform: rotate(0deg); padding-right: 2.5px;"><img src="Home.png" alt="log" width="95" height="95"></a>
 
@@ -623,48 +703,7 @@ document.getElementById("defaultOpen").click();
     display: block;
   }
 
-  .change{
-  height:auto;
-  width: 200px;
-  border-radius: 10px;
-  position: fixed;
-  z-index: 999;
-  bottom: 0.5%;
-  right: 1%;
-  background-color: #111;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-left: 5px;
-  transition: font-size 0.5s, transform 2s;
-
-
-}
-
-.change :hover{
-  transform: matrix(1, 2, 3, 4, 5, 6)  matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) scale( 1, 1) rotate(360deg) ;
-}
-
-.change a {
-  transition: font-size 0.5s, transform 2s;
-
-  padding: 6px 8px 20px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
-  text-align: center;
-}
-
-.change a:hover:not(.active) {
-  color: #00c3ff;
-  transform: matrix(1, 2, 3, 4, 5, 6)  matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) scale( 1, 1) rotate(360deg) ;
-}
-
   </style>
-
-
 
   <div class="bottomnav">
 
@@ -691,13 +730,13 @@ document.getElementById("defaultOpen").click();
     <div id="1" class="tabcontent" style="display: block;">
 
       <CENTER>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <div class="caption">
+        <div class="infoMain">
           <span class="border" style="border-radius: 20px;">
-            <img src="https://iconarchive.com/download/i94935/uiconstock/dynamic-flat-android/home.ico" width="100px" height="100px">
-            <p ><font color="white" size= 5vw; >Home page of Navaneet.J</font></p>    
-            <p ><font color="white" size= 3vw; > <i>Choose one of the section from the navigation bar to start the journey!</i></font></p>  
+            <br>
+            <img src="Home.png"style="padding-top: -50px" width="110px" height="110px">
+            <p style="margin-top: 2.5px;"><font color= lightGrey size= 3vw; > <i>Choose one of the section from the navigation bar to start the journey!</i></font></p>  
           </span>
         </div>
       </CENTER>
@@ -945,7 +984,7 @@ document.getElementById("defaultOpen").click();
 
         <br><br>
 
-        <a href="https://www.instagram.com/navaneetjaggannathan2309/"><button class="button3" style="font-size:3vw;"><font color= "white"> <img src="Instagram.png"  alt="Instagram logo" style="height: 140;", width="140">Instagram profile</button></a>
+        <a href="https://www.instagram.com/nav_pj2309/"><button class="button3" style="font-size:3vw;"><font color= "white"> <img src="Instagram.png"  alt="Instagram logo" style="height: 140;", width="140">Instagram profile</button></a>
 
           <br><br>
 
