@@ -422,7 +422,7 @@ font-family: fantasy;
 
 .topnav {
   height: 82.5%;
-  width: auto;
+  width:auto;
   border-radius: 15px;
   position: fixed;
   z-index: 200;
@@ -442,12 +442,13 @@ font-family: fantasy;
   font-size: 19px;
   color: #818181;
   display: block;
-  transition: font-size 0.5s, width 2s, height 2s, transform 2s;
+  transition: font-size 0.5s, width 2s, height 2s, transform 2s, filter 1s;
 }
 
 .topnav a:hover {
   color: rgb(0, 102, 255);
-  transform: rotateX(360deg) scale(1.2, 1.2) ;
+  transform: scale(1.2, 1.2) ;
+  filter: drop-shadow(8px 8px 10px rgb(0, 0, 0));
 
 }
 
@@ -472,7 +473,7 @@ div.main {
   position: fixed;
   bottom: 0.5%;
   left:1%;
-  width: 60%;
+  width:auto;
   height: fit-content;
   z-index: 201;
 
@@ -486,14 +487,13 @@ div.main {
   padding: 10px 16px;
   text-decoration: none;
   font-size: 17px;
-  transition: font-size 0.5s, width 2s, height 2s, transform 2s;
+
 }
 
 .bottomnav a:hover {
   color: rgb(0, 191, 255);
   text-align: center;
-  font-size: 18px;
-  transform: scale(1.1, 1.1);
+
 }
 
 .bottomnav a.active {
@@ -629,7 +629,6 @@ div.main {
 }
 
 
-
 </style>
 
 <script>
@@ -673,6 +672,7 @@ document.getElementById("defaultOpen").click();
 </script>
 </head>
 
+
 <body class="bg" bgcolor="black">
 
  <div class="topnav" id="myTopnav" style="text-align: CENTER;">
@@ -687,7 +687,6 @@ document.getElementById("defaultOpen").click();
 
       <a href="#Sites" style=" padding-top: 20px;"  onclick="openPage('5', this, 'red'), topnav()"><img src="sites icon.png" alt="log" width="80" height="50"></a>
 
-      <a href="Policy.html" style="text-align: center; padding-top: 20px;">•  Policy  •</a>
 
     </CENTER>
     <a href="javascript:void(0);" class="icon" onclick="topnav()">
@@ -812,7 +811,6 @@ document.getElementById("defaultOpen").click();
 
       <div class="caption">
         <span class="border">
-          <img src="profile icon.png" alt="log" width="100">
           <p><font color="white" size= font-size:2.5vw; > Personal Information</font></p>  
         </span>
       </div>
@@ -965,6 +963,51 @@ document.getElementById("defaultOpen").click();
       </div>
     </div>
   </div>
+
+  <style>
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .container img {
+      width: 100%;
+      height: auto;
+      transition: filter 1s;
+
+    }
+    
+    .container .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: rgb(45, 47, 68);
+      color: white;
+      font-size: 20px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      text-align: center;
+      transition: font-size 0.5s, background-color 0.5s;
+    }
+    
+    .container .btn:hover {
+      background-color: black;
+      font-size: 24px;
+      
+
+    }
+
+    .container img:hover {
+      filter: blur(5px);
+
+    }
+
+    </style>
   
   <div id="5" class="tabcontent">
       <CENTER>
@@ -977,25 +1020,39 @@ document.getElementById("defaultOpen").click();
           
         <br><br>
 
-        <a href="https://github.com/navaneet239"><button class="button3" style="font-size:3vw;"><font color= "white"> <img src="https://github.githubassets.com/pinned-octocat.svg" alt="github" style="height: 140;", width="140"> github profile</button></a>
+        <div class="container">
+          <img src="https://github.githubassets.com/pinned-octocat.svg" alt="Github" style="width:87.5%">
+          <a href="https://github.com/navaneet239"><button class="btn">Github profile</button></a>
+        </div>
 
         <br><br>
 
-        <a href="https://www.facebook.com/navaneet.jaggannathan/"><button class="button3" style="font-size:3vw;"><font color= "white"> <img src="faceBoock.png"  alt="facebookk logo" style="height: 140;", width="140">facebook profile</button></a>
+        <div class="container">
+          <img src="faceBoock.png" alt="Facebook" style="width:87.5%">
+          <a href="https://www.facebook.com/navaneet.jaggannathan/"><button class="btn">Facebook profile</button></a>
+        </div>
 
         <br><br>
 
-        <a href="https://www.instagram.com/nav_pj2309/"><button class="button3" style="font-size:3vw;"><font color= "white"> <img src="Instagram.png"  alt="Instagram logo" style="height: 140;", width="140">Instagram profile</button></a>
-
-          <br><br>
-
-        
-
-        <a href="https://in.pinterest.com/NavPadJag/"><button class="button3" style="font-size:3vw;"><font color= "white"><img src="pinterest_badge-d9ac575a.svg" alt="facebook logo" style="height: 140;", width="140"> Pinterest profile</button></a>
+        <div class="container">
+          <img src="Instagram.png" alt="Instagram" style="width:87.5%">
+          <a href="https://www.instagram.com/nav_pj2309/"><button class="btn">Instagram profile</button></a>
+        </div>
 
         <br><br>
 
-        <a href="https://open.spotify.com/user/r2n5niqigeto2gu5uisu0hh3p?si=8-2tD3N9Rui75en6evobcQ&nd=1"><font color= "white"> <button class="button3" style="font-size:3vw;"><img src="Spotify_Logo_RGB_Green-256.webp" alt="spotify logo" style="height: 150", width="150"> spotify profile</button></a>
+        <div class="container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest" style="width:87.5%">
+          <a href="https://in.pinterest.com/NavPadJag/"><button class="btn">Pinterest profile</button></a>
+        </div>
+
+        <br><br>
+
+        <div class="container">
+          <img src="Spotify_Logo_RGB_Green-256.webp" alt="Spotify" style="width:87.5%">
+          <a href="https://open.spotify.com/user/r2n5niqigeto2gu5uisu0hh3p?si=8-2tD3N9Rui75en6evobcQ&nd=1"><button class="btn">Spotify profile</button></a>
+        </div>
+
         <br><br>
 
       </CENTER>
