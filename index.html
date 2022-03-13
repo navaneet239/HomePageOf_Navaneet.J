@@ -59,6 +59,18 @@ h3 {
 
 }
 
+.loader{
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  transition: all 0.5s;
+}
+
 /* --- Button styling --- */
 
 /* Button 1 */
@@ -633,6 +645,7 @@ div.main {
 
 <script>
 
+
 function topnav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -669,11 +682,29 @@ function openPage(pageName, elmnt, color) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
+
+
 </script>
 </head>
 
 
 <body class="bg" bgcolor="black">
+
+  
+  <div class="loader"> 
+    <img src="https://i.pinimg.com/originals/7e/fc/2c/7efc2cb33ee4eb9d7625ca1eca702506.gif" alt="load">
+</div>
+
+<script>
+  const loader = document.querySelector(".loader");
+  window.onload = function(){
+  setTimeout(function(){
+  loader.style.opacity = "0";
+  setTimeout(function(){
+  loader.style.display = "none";
+  },500);
+  },5000);
+  }</script>
 
  <div class="topnav" id="myTopnav" style="text-align: CENTER;">
     <CENTER>
@@ -868,7 +899,7 @@ document.getElementById("defaultOpen").click();
 
             <ol>
 
-              <li>Athlete</li>
+              <li>Atlete</li>
               <li>gymnastics</li>
               <li>cricket</li>
               <li>badminton</li>
