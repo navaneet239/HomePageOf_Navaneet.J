@@ -22,7 +22,9 @@
     <CENTER>
       
       <a href="#default" style="text-align: CENTER; transform: rotate(0deg); padding-right: 2.5px;             filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0));
-      ">
+      " onclick="
+      openPage('1', this, 'rgb(255, 255, 255)'), 
+      topnav()">
       <img src="Home.png" alt="log" width="95" height="95"></a>
 
       <a href="#home"  style=" padding-top: 30px;"  onclick="
@@ -103,7 +105,7 @@
             <img src="Home.png"style="padding-top: -50px" width="110px" height="110px">
             <p style="margin-top: 2.5px; color:#d1d1d1"><font size= 3vw; > <i>This is the official portfolio website of Navaneet.J</i></font></p> 
             <center>
-              <a href="#Profile" onclick="openPage('2', this, 'red')"> <button class="button">Lets start the journey!</button></a>
+              <a href="#Home" onclick="openPage('2', this, 'red')"> <button class="button">start the journey!</button></a>
             </center>  
           </span>
         </div>
@@ -148,7 +150,7 @@
           <span class="border" style="background-color:transparent;font-size:25px;
           color: black; 
           font-size:2vw;
-          backdrop-filter:blur(15px)  brightness(25%);">
+          backdrop-filter:blur(15px) saturate(200%)  brightness(25%);">
             <h3 style="text-align:center; color: rgb(204, 204, 204)">Art is my Hike!</h3>
             <center>
               <a href="#Arts" onclick="openPage('6', this, 'red')"> <button class="button">Check out</button></a>
@@ -175,7 +177,7 @@
       <div class="bgimg-3">
         <div class="caption">
           <span class="border" style="background-color:transparent;font-size: 3.6vw;color: #f7f7f7;
-          backdrop-filter:blur(15px)  brightness(25%);">Wanna go further??</span>
+          backdrop-filter:blur(15px) saturate(200%)  brightness(25%);">Wanna go further??</span>
         </div>
       </div>
   
@@ -192,11 +194,14 @@
   
       <div class="bgimg-4">
         <div class="caption">
-          <span class="border" style="backdrop-filter:blur(15px)  brightness(25%);">
+          <span class="border" style="backdrop-filter:blur(15px) saturate(200%)  brightness(25%);">
             <h1 style="font-size:3.6vw;">Switch to the next tab!!</h1>
+            <div >
+              <a href="#Profile" onclick="openPage('3', this, 'red')"> <button class="button"> Next ▶</button></a></div>
+            </div>
           </span>
         </div>
-      </div>
+
 
     </div>
 
@@ -306,10 +311,14 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-  </div>
+<br>
+<CENTER>
+  <div >
+    <h3>Awards Section</h3>
+  
+    <a href="#Awards" onclick="openPage('4', this, 'red')"> <button class="button"> Next tab ▶</button></a></div></CENTER>
 </div>
-    
-
+  </div>
 </div>
 
     <div id="4" class="tabcontent">
@@ -353,7 +362,12 @@ for (i = 0; i < coll.length; i++) {
               <img src="8.jpg" style="width:100%">
             </div>
           </div>
-
+          <br>
+          <CENTER>
+            <div >
+              <h3 style="color: #bebebe;">Art Section</h3>
+            
+              <a href="#Art" onclick="openPage('6', this, 'red')"> <button class="button"> Next tab ▶</button></a></div></CENTER>
         </div>
       </div>
     </div>
@@ -467,7 +481,13 @@ for (i = 0; i < coll.length; i++) {
               <img src="art15.jpg" style="width:100%">
             </div>
           </div>
+          <br>
 
+          <CENTER>
+            <div >
+              <h3 style="color: #bebebe;">Social platform Section</h3>
+            
+              <a href="#Sites" onclick="openPage('5', this, 'red')"> <button class="button"> Next tab ▶</button></a></div></CENTER>
         </div>
       </div>
     </div>
