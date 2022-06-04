@@ -3,9 +3,6 @@
 # Theme changer v1 for the Homepage
 Soon theme changers would be added in the site where you could choose your preffered visual look!
 
-The most fun part which could be added  is inbuilt games! (Remember, inbuilt games is not finalized to be added, it's still on hold) 
-After finalising about the inbuilt games, we would add a notice for it.
-
 ### Current themes to be added:
 
 - Dark fluent (default) or Light fluent UIs
@@ -18,3 +15,6 @@ After finalising about the inbuilt games, we would add a notice for it.
 > More possible suggestions could make your experience better!
 
 #### Thanks for your support!
+
+Another surprising pre-notice...Possibilities for adding inbuilt games! After finalising about the inbuilt games, we would add a notice for it too!
+(Remember, inbuilt games is not finalized to be added, it's still on hold) 
