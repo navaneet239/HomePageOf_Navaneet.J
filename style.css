@@ -240,12 +240,12 @@ html::-webkit-scrollbar-thumb {
           z-index: 200;
           bottom: -1%;
           left: -80px;
-          top: 1.5%;
+          top: 0.5%;
           
           overflow-y:hidden;
           overflow-x:hidden;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          padding-top: 7.5px;
+          padding-bottom: 7.5px;
           padding-right: 10px;
           padding-left: 10px;
 
