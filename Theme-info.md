@@ -1,7 +1,7 @@
 <img align="right" width="100" height="100" src="https://navaneet239.github.io/HomePageOf_Navaneet.J/Home.png">
 
 # Theme changer v1 for the Homepage
-Soon theme changers would be added in the site where you could choose your preffered visual look!
+Soon theme changers would be added in the site where you could choose your prefferred visual look!
 
 ### Current themes to be added:
 
