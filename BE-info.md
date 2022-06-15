@@ -15,6 +15,7 @@ Hey! Portfolios are meant to explain about a person and his characteristics, tal
 2. 'Material YOU' based Material UI
 3. Minecraft
 
-Implementation of the initiative would take place soon as we are testing it in all possible ways. **Thanks for your support!**
+Implementation of the initiative is been taken place! Go check it out!
+ **Thanks for your support!**
 
 
