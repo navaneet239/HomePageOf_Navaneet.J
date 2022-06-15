@@ -157,29 +157,52 @@ html::-webkit-scrollbar-thumb {
       border: 1px #000;
       }
 
-      #mySidenav a {
-        position: fixed; 
-        top: -75px;
-        right: 100px;
-        transition: 0.75s;
-        padding: 15px;
-        width: auto;
-        text-decoration: none;
-        font-size: 18px;
-        color: white;
-      
+      .mySidenav {
+        display:block;
+        height:max-content;
+        width:auto;
+        position: fixed;
+        z-index: 200;
+        bottom: 5%;
+        top: -210px;
+        right: 100px; 
+
+        overflow-y:hidden;
+        overflow-x:hidden;
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        transform: translate(5%);
+        transition: 0.75s ;
+
         background:  linear-gradient(90deg, rgba(53, 0, 0, 0.55) 0%, rgba(0, 19, 83, 0.55) 100%);
         backdrop-filter: blur(10px) contrast(300%) brightness(70%);
         box-shadow: 2px 4px 10px #000000 inset;
         border-style:double;
         border-top: none;
-        border-radius: 0px 0px 25px 25px;
-        z-index: 3;
+        border-radius:  0px  0px 25px 25px;
+        
+
+      }
+
+      .mySidenav:hover {top: 1px; }
+
+      .mySidenav a {
+        padding: 6px 8px 2px 10px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #818181;
+        display: block;
+        transition: font-size 0.5s, width 2s, height 2s, transform 2s, filter 1s;
+        filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
       }
       
-      #mySidenav a:hover {
-        top: 0;
-        
+      .mySidenav a:hover {
+        filter: drop-shadow(0px 0px 5px rgb(177, 208, 255));
+        transform: scale(1.2, 1.2);
+
       }
 
 
@@ -233,15 +256,15 @@ html::-webkit-scrollbar-thumb {
           padding: 6px 48px 20px 48px;
         }
 
-        .topnav {
+        .site-nav {
+          display:block;
           height:max-content;
           width:auto;
           position: fixed;
           z-index: 200;
-          bottom: -1%;
-          left: -80px;
-          top: 0.5%;
-          
+          bottom: 5%;
+          right: -60px;
+
           overflow-y:hidden;
           overflow-x:hidden;
           padding-top: 7.5px;
@@ -249,20 +272,71 @@ html::-webkit-scrollbar-thumb {
           padding-right: 10px;
           padding-left: 10px;
 
-          transform: translate(5%, 3.5%);
-          transition:left 0.3s, top 0.3s;
+          transform: translate(5%);
+          transition: 0.75s ;
         
           background:  linear-gradient(90deg, rgba(53, 0, 0, 0.55) 0%, rgba(0, 19, 83, 0.55) 100%);
           backdrop-filter: blur(10px) contrast(300%) brightness(70%);
           box-shadow: 2px 4px 10px #000000 inset;
           border-style:double;
-          border-right: none; border-left: none;
+          border-right: none;
+          border-left: none;
+          border-radius: 25px 0px 0px  25px;
+          
+
+        }
+
+        .site-nav:hover {right: 1px; }
+
+        .site-nav a {
+          padding: 6px 8px 2px 10px;
+          text-decoration: none;
+          font-size: 19px;
+          color: #818181;
+          display: block;
+          transition: font-size 0.5s, width 2s, height 2s, transform 2s, filter 1s;
+          filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+        }
+        
+        .site-nav a:hover {
+          color: rgb(0, 102, 255);
+          filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+        }
+        
+
+        .topnav {
+          height:max-content;
+          width:auto;
+          position: fixed;
+          z-index: 200;
+          bottom: -1%;
+          left: -65px;
+          top: 25px;
+          
+          overflow-y:hidden;
+          overflow-x:hidden;
+          padding-top: 7.5px;
+          padding-bottom: 7.5px;
+          padding-right: 7.5px;
+          padding-left: 7.5px;
+          
+          transform: translate(5%, 3.5%);
+          transition: 0.5s ;
+        
+          background:  linear-gradient(90deg, rgba(75, 0, 0, 0.55) 0%, rgba(0, 24, 104, 0.55) 100%);
+          backdrop-filter: blur(10px) contrast(300%) brightness(70%);
+          box-shadow: 2px 4px 10px #000000 inset;
+          border-style:double;
+          border-left: none;
+          border-right: none;
           border-radius: 0px 25px 25px 0px;
           
 
         }
 
-        .topnav:hover {left: -10px;}
+        .topnav:hover {left: -10px; padding-left: 7.5px;}
+
+        .topnav .site {display: none;}
 
         .topnav a {
           padding: 6px 8px 2px 10px;
@@ -276,7 +350,7 @@ html::-webkit-scrollbar-thumb {
         
         .topnav a:hover {
           color: rgb(0, 102, 255);
-          transform: scale(1.2, 1.2);
+          transform: scale(1.1, 1.1);
           filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
         }
         
@@ -301,6 +375,8 @@ html::-webkit-scrollbar-thumb {
           background-size: cover;
         }
       
+        .site-nav {display:none;}
+  
           .topnav a:not(:first-child) {display: none;}
         
           .topnav a.icon {
@@ -325,8 +401,11 @@ html::-webkit-scrollbar-thumb {
             vertical-align: middle;
             transition:left 0s, 0.5s;
           }
+          .topnav .site {display: block;}
+
 
           .topnav:hover {left:  2.5%;}
+
         
           .topnav a {
             float: left;
@@ -354,7 +433,7 @@ html::-webkit-scrollbar-thumb {
         
           .infoMain{top: 65%;}
           
-          #mySidenav a {display: none;}
+          .mySidenav a {display: none;}
 
         }
         
